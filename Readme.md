@@ -82,16 +82,15 @@ The front-end server will start on port `3000`.
 
 Sign in (login):
 
-	```
-	curl -v -XPOST http://localhost:8080/api/auth/signin -H "content-type: application/json" 
---data-binary '{"usernameOrEmail":"admin@admin.net","password":"pepe1234"}'
-	```
+```bash
+curl -v -XPOST http://localhost:8080/api/auth/signin -H "content-type: application/json" \\
+     --data-```bashbinary '{"usernameOrEmail":"admin@admin.net","password":"pepe1234"}'
+```
 
 Sign up (registrar):
 
-	```
-	curl -v -XPOST http://localhost:8080/api/auth/signup -H "content-type: application/json" 
---data-binary 
-'{"name":"pepe","email":"admin@admin.net","username":"admin@admin.net","password":"pepe1234"}'
-	```
+```bash
+curl -v -XPOST http://localhost:8080/api/auth/signup -H "content-type: application/json" \\
+     --data-binary '{"name":"pepe","email":"admin@admin.net","username":"admin@admin.net","password":"pepe1234"}'
+```
 
