@@ -84,7 +84,7 @@ Sign in (login):
 
 ```bash
 curl -v -XPOST http://localhost:8080/api/auth/signin -H "content-type: application/json" \\
-     --data-```bashbinary '{"usernameOrEmail":"admin@admin.net","password":"pepe1234"}'
+     --data-binary '{"usernameOrEmail":"admin@admin.net","password":"pepe1234"}'
 ```
 
 Sign up (registrar):
